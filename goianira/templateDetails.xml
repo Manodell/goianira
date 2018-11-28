@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "https://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 <extension version="3.1" type="template" client="site" method="upgrade">
-	<name>reveal</name>
+	<name>goianira</name>
 	<version>1.0</version>
 	<creationDate>09/27/2018</creationDate>
 	<author>Manodell</author>
-	<authorEmail>manodell@REVEALvoce.com.br</authorEmail>
+	<authorEmail>manodell@gmail.com</authorEmail>
 	<copyright>Copyright (C) 2005 - 2018 Experimente Voce. All rights reserved.</copyright>
-	<description>TPL_REVEAL_XML_DESCRIPTION</description>
+	<description>TPL_GOIANIRA_XML_DESCRIPTION</description>
 	<files>
 		<filename>component.php</filename>
 		<filename>error.php</filename>
@@ -15,15 +15,13 @@
 		<filename>favicon.ico</filename>
 		<filename>index.php</filename>
 		<filename>templateDetails.xml</filename>
-		<filename>template_preview.png</filename>
-		<filename>template_thumbnail.png</filename>
 		<folder>css</folder>
 		<folder>html</folder>
 		<folder>images</folder>
 		<folder>img</folder>
 		<folder>js</folder>
 		<folder>language</folder>
-		<folder>less</folder>
+		<folder>lib</folder>
 	</files>
 	<positions>
 		<position>banner</position>
@@ -52,8 +50,8 @@
 		<position>footer</position>
 	</positions>
 	<languages folder="language">
-		<language tag="pt-BR">pt-BR/pt-BR.tpl_reveal.ini</language>
-		<language tag="pt-BR">pt-BR/pt-BR.tpl_reveal.sys.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.tpl_goianira.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.tpl_goianira.sys.ini</language>
 	</languages>
 	<config>
 		<fields name="params">
@@ -61,8 +59,8 @@
 				<field 
 					name="sitetitlename"  
 					type="text" 
-					label="TPL_REVEAL_TITLE_NAME"
-					description="TPL_REVEAL_TITLE_NAME_DESC"
+					label="TPL_GOIANIRA_TITLE_NAME"
+					description="TPL_GOIANIRA_TITLE_NAME_DESC"
 					default=""
 					filter="string" 
 				/>
@@ -70,8 +68,8 @@
 				<field 
 					name="templateColor" 
 					type="color" 
-					label="TPL_REVEAL_COLOR_LABEL"
-					description="TPL_REVEAL_COLOR_DESC" 
+					label="TPL_GOIANIRA_COLOR_LABEL"
+					description="TPL_GOIANIRA_COLOR_DESC" 
 					class="" 
 					default="#0088CC"
 				/>
@@ -79,8 +77,8 @@
 				<field 
 					name="templateBackgroundColor" 
 					type="color" 
-					label="TPL_REVEAL_BACKGROUND_COLOR_LABEL"
-					description="TPL_REVEAL_BACKGROUND_COLOR_DESC" 
+					label="TPL_GOIANIRA_BACKGROUND_COLOR_LABEL"
+					description="TPL_GOIANIRA_BACKGROUND_COLOR_DESC" 
 					class="" 
 					default="#F4F6F7"
 				/>
@@ -88,16 +86,16 @@
 				<field 
 					name="logoFile" 
 					type="media" 
-					label="TPL_REVEAL_LOGO_LABEL"
-					description="TPL_REVEAL_LOGO_DESC" 
+					label="TPL_GOIANIRA_LOGO_LABEL"
+					description="TPL_GOIANIRA_LOGO_DESC" 
 					class="" 
 					default=""
 				/>
 				<field 
 					name="favIcon" 
 					type="media" 
-					label="TPL_REVEAL_FAVICON_LABEL"
-					description="TPL_REVEAL_FAVICON_DESC" 
+					label="TPL_GOIANIRA_FAVICON_LABEL"
+					description="TPL_GOIANIRA_FAVICON_DESC" 
 					class="" 
 					default=""
 				/>
@@ -123,8 +121,8 @@
 				<field 
 					name="googleFont"
 					type="radio"
-					label="TPL_REVEAL_FONT_LABEL"
-					description="TPL_REVEAL_FONT_DESC"
+					label="TPL_GOIANIRA_FONT_LABEL"
+					description="TPL_GOIANIRA_FONT_DESC"
 					class="btn-group btn-group-yesno"
 					default="1"
 					>
@@ -135,8 +133,8 @@
 				<field 
 					name="googleFontName" 
 					type="text" 
-					label="TPL_REVEAL_FONT_NAME_LABEL"
-					description="TPL_REVEAL_FONT_NAME_DESC" 
+					label="TPL_GOIANIRA_FONT_NAME_LABEL"
+					description="TPL_GOIANIRA_FONT_NAME_DESC" 
 					class="" 
 					default="Open+Sans"
 					showon="googleFont:1" 
@@ -145,13 +143,13 @@
 				<field 
 					name="fluidContainer"
 					type="radio"
-					label="TPL_REVEAL_FLUID_LABEL"
-					description="TPL_REVEAL_FLUID_DESC"
+					label="TPL_GOIANIRA_FLUID_LABEL"
+					description="TPL_GOIANIRA_FLUID_DESC"
 					class="btn-group btn-group-yesno"
 					default="0"
 					>
-					<option value="1">TPL_REVEAL_FLUID</option>
-					<option value="0">TPL_REVEAL_STATIC</option>
+					<option value="1">TPL_GOIANIRA_FLUID</option>
+					<option value="0">TPL_GOIANIRA_STATIC</option>
 				</field>
 			</fieldset>
 		</fields>
