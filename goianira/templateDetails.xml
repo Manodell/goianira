@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "https://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site" method="upgrade">
+	<name>reveal</name>
+	<version>1.0</version>
+	<creationDate>09/27/2018</creationDate>
+	<author>Manodell</author>
+	<authorEmail>manodell@REVEALvoce.com.br</authorEmail>
+	<copyright>Copyright (C) 2005 - 2018 Experimente Voce. All rights reserved.</copyright>
+	<description>TPL_REVEAL_XML_DESCRIPTION</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>offline.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>less</folder>
+	</files>
+	<positions>
+		<position>banner</position>
+		<position>debug</position>
+		<position>main-menu</position>
+		<position>position-social</position>
+		<position>position-search</position>
+		<position>slider-show</position>
+		<position>position-about</position>
+		<position>position-servicos</position>
+		<position>position-menufooter1</position>
+		<position>position-menufooter2</position>
+		<position>position-menufooter3</position>
+		<position>position-menufooter4</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>footer</position>
+	</positions>
+	<languages folder="language">
+		<language tag="pt-BR">pt-BR/pt-BR.tpl_reveal.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.tpl_reveal.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field 
+					name="sitetitlename"  
+					type="text" 
+					label="TPL_REVEAL_TITLE_NAME"
+					description="TPL_REVEAL_TITLE_NAME_DESC"
+					default=""
+					filter="string" 
+				/>
+
+				<field 
+					name="templateColor" 
+					type="color" 
+					label="TPL_REVEAL_COLOR_LABEL"
+					description="TPL_REVEAL_COLOR_DESC" 
+					class="" 
+					default="#0088CC"
+				/>
+
+				<field 
+					name="templateBackgroundColor" 
+					type="color" 
+					label="TPL_REVEAL_BACKGROUND_COLOR_LABEL"
+					description="TPL_REVEAL_BACKGROUND_COLOR_DESC" 
+					class="" 
+					default="#F4F6F7"
+				/>
+
+				<field 
+					name="logoFile" 
+					type="media" 
+					label="TPL_REVEAL_LOGO_LABEL"
+					description="TPL_REVEAL_LOGO_DESC" 
+					class="" 
+					default=""
+				/>
+				<field 
+					name="favIcon" 
+					type="media" 
+					label="TPL_REVEAL_FAVICON_LABEL"
+					description="TPL_REVEAL_FAVICON_DESC" 
+					class="" 
+					default=""
+				/>
+
+				<field 
+					name="sitetitle"  
+					type="text" 
+					label="JGLOBAL_TITLE"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					default=""
+					filter="string" 
+				/>
+
+				<field 
+					name="sitedescription"  
+					type="text" 
+					label="JGLOBAL_DESCRIPTION"
+					description="JGLOBAL_SUBHEADING_DESC"
+					default=""
+					filter="string" 
+				/>
+
+				<field 
+					name="googleFont"
+					type="radio"
+					label="TPL_REVEAL_FONT_LABEL"
+					description="TPL_REVEAL_FONT_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field 
+					name="googleFontName" 
+					type="text" 
+					label="TPL_REVEAL_FONT_NAME_LABEL"
+					description="TPL_REVEAL_FONT_NAME_DESC" 
+					class="" 
+					default="Open+Sans"
+					showon="googleFont:1" 
+				/>
+
+				<field 
+					name="fluidContainer"
+					type="radio"
+					label="TPL_REVEAL_FLUID_LABEL"
+					description="TPL_REVEAL_FLUID_DESC"
+					class="btn-group btn-group-yesno"
+					default="0"
+					>
+					<option value="1">TPL_REVEAL_FLUID</option>
+					<option value="0">TPL_REVEAL_STATIC</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

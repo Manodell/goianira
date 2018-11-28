@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_sliderslick</name>
+	<author>Otoniel Roza</author>
+	<creationDate>12/11/2018</creationDate>
+	<copyright>Copyright (C) 2018 Governo de Goianira. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>manodell@gmail.com</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Modulo Para Sliders Slick</description>
+	<files>
+		<filename module="mod_sliderslick">mod_sliderslick.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+	</files>
+	<languages>
+		<language tag="pt-BR">pt-BR.mod_sliderslick.ini</language>
+		<language tag="pt-BR">pt-BR.mod_sliderslick.sys.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_SLIDER" />
+	<config>
+		<fields name="params">
+			<fieldset
+				name="basic"
+				addfieldpath="/components/com_conimages/models/fields"
+				>
+				<field
+					name="count"
+					type="number"
+					label="Quantidade de slides"
+					description="MOD_SLIDER_FIELD_COUNT_DESC"
+					default="5"
+					filter="integer"
+					class="validate-numeric"
+				/>
+				<field
+					name="catid"
+					type="category"
+					label="JCATEGORY"
+					description="MOD_POPULAR_FIELD_CATEGORY_DESC"
+					extension="com_conimages"
+					multiple="true"
+					filter="integer"
+				/>
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+					rows="3"
+				/>
+
+				<field
+					name="cache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+					default="1"
+					filter="integer"
+					>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="number"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+					default="900"
+					filter="integer"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
