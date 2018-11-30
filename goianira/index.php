@@ -235,7 +235,7 @@ else
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Telefone</h3>
-              <p><a href="contato">(62) 3516-2090</a></p>
+              <p><a title="contato" href="index.php/contato">(62) 3516-2090</a></p>
             </div>
           </div>
 

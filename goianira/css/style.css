@@ -720,8 +720,21 @@ a.mod-articles-category-title {
 .item-page img {
   margin:20px 20px 0 0;
   max-width:400px;
-  
 }
+
+.items-leading p,.span4 .item p{
+  margin:15px;
+  text-align: justify;
+}
+/* articleBody*/
+.item-image img {
+  margin:20px 20px; 
+}
+.pagination-list li{
+  display: inline;
+  padding-left: 5px;
+}
+
 .article .item-page p {
   margin:10px;
   padding:10px;
